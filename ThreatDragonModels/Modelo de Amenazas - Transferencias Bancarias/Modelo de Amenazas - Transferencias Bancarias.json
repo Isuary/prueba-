@@ -539,8 +539,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "b51f85ec-114e-4c7d-8d5d-1b6013dfe6fc",
             "zIndex": -1,
+            "id": "b51f85ec-114e-4c7d-8d5d-1b6013dfe6fc",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Perímetro Interno / Backend",
@@ -580,6 +580,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -663,7 +664,6 @@
               ]
             },
             "id": "f6942cba-65ee-4fa6-88e7-42f544671d61",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Cliente Mobile",
@@ -697,6 +697,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -780,7 +781,6 @@
               ]
             },
             "id": "143b6280-6136-413b-a4d6-37578763b611",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Core Bancario Externo",
@@ -814,6 +814,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -897,7 +898,6 @@
               ]
             },
             "id": "712bf886-696e-4c63-ba68-6c120f1b17b4",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "API Gateway",
@@ -956,6 +956,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -1039,7 +1040,6 @@
               ]
             },
             "id": "9c114592-d944-40d5-8682-4276c2ab3e0b",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Gestor de Transferencias",
@@ -1290,6 +1290,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1373,7 +1374,6 @@
               ]
             },
             "id": "ade77af9-c169-4895-bca5-0365c7e1f0bc",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "DB Cuentas",
