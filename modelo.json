@@ -1,0 +1,66 @@
+{
+  "summary": {
+    "title": "Modelo de Amenazas - Transferencias Bancarias",
+    "owner": "Equipo de Seguridad",
+    "description": "Modelo STRIDE para el flujo de transferencias bancarias en DFD Nivel 0, 1 y 2.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "DFD Nivel 0 - Contexto General",
+        "id": 0,
+        "diagramType": "STRIDE",
+        "cells": [
+          { "type": "tm.Actor", "id": "ee01", "position": { "x": 50, "y": 100 }, "attrs": { "text": { "text": "Cliente Mobile" } } },
+          { "type": "tm.Process", "id": "p00", "position": { "x": 300, "y": 100 }, "attrs": { "text": { "text": "Sistema de Transferencias" } } },
+          { "type": "tm.Actor", "id": "ee02", "position": { "x": 600, "y": 100 }, "attrs": { "text": { "text": "Core Bancario Externo" } } },
+          { "type": "tm.Flow", "id": "f01", "source": { "id": "ee01" }, "target": { "id": "p00" }, "attrs": { "text": { "text": "Solicita Transferencia" } } },
+          { "type": "tm.Flow", "id": "f02", "source": { "id": "p00" }, "target": { "id": "ee02" }, "attrs": { "text": { "text": "Envía Fondos Interbancarios" } } }
+        ]
+      },
+      {
+        "title": "DFD Nivel 1 - SubSistemas Principales",
+        "id": 1,
+        "diagramType": "STRIDE",
+        "cells": [
+          { "type": "tm.Actor", "id": "ee01", "position": { "x": 50, "y": 150 }, "attrs": { "text": { "text": "Cliente Mobile" } } },
+          { "type": "tm.Process", "id": "p01", "position": { "x": 250, "y": 150 }, "attrs": { "text": { "text": "API Gateway" } } },
+          { "type": "tm.Process", "id": "p02", "position": { "x": 450, "y": 150 }, "attrs": { "text": { "text": "Gestor de Transferencias" } } },
+          { "type": "tm.Store", "id": "ds01", "position": { "x": 450, "y": 300 }, "attrs": { "text": { "text": "DB Cuentas" } } },
+          { "type": "tm.Boundary", "id": "tb01", "position": { "x": 180, "y": 50 }, "attrs": { "text": { "text": "Internet / DMZ Boundary" } } }
+        ]
+      },
+      {
+        "title": "DFD Nivel 2 - Detalle Transaccional",
+        "id": 2,
+        "diagramType": "STRIDE",
+        "cells": [
+          { "type": "tm.Process", "id": "p02", "position": { "x": 100, "y": 100 }, "attrs": { "text": { "text": "Gestor Transferencias" } } },
+          { "type": "tm.Process", "id": "p03", "position": { "x": 350, "y": 100 }, "attrs": { "text": { "text": "Módulo Contabilidad" } } },
+          { "type": "tm.Process", "id": "p04", "position": { "x": 350, "y": 250 }, "attrs": { "text": { "text": "Conector Interbancario" } } },
+          { "type": "tm.Store", "id": "ds02", "position": { "x": 600, "y": 100 }, "attrs": { "text": { "text": "Audit Log" } } },
+          {
+            "type": "tm.Flow",
+            "id": "df04",
+            "source": { "id": "p02" },
+            "target": { "id": "p03" },
+            "attrs": { "text": { "text": "Ejecuta Débito" } },
+            "threats": [
+              {
+                "title": "Inyección SQL o Manipulación de Montos",
+                "category": "Elevation of Privilege",
+                "status": "Open",
+                "severity": "High",
+                "description": "Elude la verificación de fondos al forzar la transacción directa.",
+                "mitigation": "Validación de esquema y consultas parametrizadas."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "diagramTop": 3
+  }
+}
