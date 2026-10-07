@@ -18,7 +18,502 @@
         "placeholder": "Descripción de nuevo diagrama STRIDE",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.2",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 460,
+              "y": 210
+            },
+            "size": {
+              "width": 128,
+              "height": 60
+            },
+            "attrs": {
+              "label": {
+                "text": "Límite de Red Pública / Internet"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "3d16b5a1-c7f7-4f4b-a971-6fa29f425ba4",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Límite de Red Pública / Internet",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            }
+          },
+          {
+            "position": {
+              "x": 240,
+              "y": 110
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Cliente Mobile"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "7ecf94eb-af35-4f10-9e8b-956c6ef2eb3c"
+                },
+                {
+                  "group": "right",
+                  "id": "3bc26b29-d174-4577-bdf4-db4719ea5fbb"
+                },
+                {
+                  "group": "bottom",
+                  "id": "bb2b5ec3-0a89-4c5b-95a4-96f0a2c7df32"
+                },
+                {
+                  "group": "left",
+                  "id": "5fd10686-d6f8-4606-b705-867c468f366a"
+                }
+              ]
+            },
+            "id": "f734d75e-48f3-4dc5-a531-88b9a9655764",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Cliente Mobile",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 842.5,
+              "y": 110
+            },
+            "size": {
+              "width": 190,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Core Bancario Externo"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "7ecf94eb-af35-4f10-9e8b-956c6ef2eb3c"
+                },
+                {
+                  "group": "right",
+                  "id": "3bc26b29-d174-4577-bdf4-db4719ea5fbb"
+                },
+                {
+                  "group": "bottom",
+                  "id": "bb2b5ec3-0a89-4c5b-95a4-96f0a2c7df32"
+                },
+                {
+                  "group": "left",
+                  "id": "5fd10686-d6f8-4606-b705-867c468f366a"
+                }
+              ]
+            },
+            "id": "4adf6935-7bbf-4bcc-95b6-d1252d9adeaf",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Core Bancario Externo",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 470,
+              "y": 250
+            },
+            "size": {
+              "width": 230,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Sistema de Transferencias"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "dc5602f6-d944-4d16-a839-7c327696ef82"
+                },
+                {
+                  "group": "right",
+                  "id": "91b14c4b-304f-4883-92e1-745112c495eb"
+                },
+                {
+                  "group": "bottom",
+                  "id": "fcc11746-e296-421a-b823-e0fd46ce1cf0"
+                },
+                {
+                  "group": "left",
+                  "id": "a95301bd-27cb-4516-86b2-4bde26beb809"
+                }
+              ]
+            },
+            "id": "b7037a59-8fda-4c6b-a834-c4ea07b84bac",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Process",
+              "name": "Sistema de Transferencias",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Solicitud de Transferencia",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "b6539f4a-52c2-44e7-a2c2-56b74383d58c",
+                  "title": "Manipulación del Monto o Cuenta Destino",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering / Manipulación",
+                  "description": "Un atacante intercepta la petición en tránsito e altera los datos de la transferencia (monto, IBAN o cuenta destino) antes de que llegue al servidor.",
+                  "mitigation": "Uso obligatorio de HTTPS (TLS 1.3), verificación de la integridad del payload mediante firmas HMAC e implementación de cifrado de extremo a extremo (E2EE).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Solicitud de Transferencia"
+            ],
+            "id": "a3598280-9e95-4fdb-9b85-97daa6ca85ba",
+            "source": {
+              "x": 353,
+              "y": 132
+            },
+            "target": {
+              "cell": "b7037a59-8fda-4c6b-a834-c4ea07b84bac",
+              "port": "dc5602f6-d944-4d16-a839-7c327696ef82"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Envío de Fondos",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Envío de Fondos"
+            ],
+            "id": "9a7d2be7-415d-4f9b-96e2-dfc5aaf8e774",
+            "source": {
+              "x": 610,
+              "y": 270
+            },
+            "target": {
+              "cell": "4adf6935-7bbf-4bcc-95b6-d1252d9adeaf",
+              "port": "5fd10686-d6f8-4606-b705-867c468f366a"
+            }
+          }
+        ]
       },
       {
         "id": 2,
@@ -43,6 +538,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "Seguridad / Auditoría",
-    "threatTop": 0
+    "threatTop": 2
   }
 }
